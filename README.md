@@ -29,7 +29,7 @@ Logic/code of the game exported to [`src/`](src):
 - [`Movement.bas`](src/Movement.bas): `StartGame_Click` places the characters and fuel; `Up/Down/Left/Right_Click` move the player and check the colour of the target cell to decide what happens; `Reset_Click` restores the board from a hidden copy sheet.
 - [`LightSpeed.bas`](src/LightSpeed.bas): checks each direction for an adjacent Death Star and either jumps past it (spending 3 fuel) or sends you back to the start.
 
-The game state lives in the sheet itself: the player's position is the selected cell, cell colours define the map, and `AF7` / `AF9` hold the fuel count and whether you've received advice.
+Cells on the right display fuel count and whether you've received the advice which will let you finish.
 
 ## Built with
 
